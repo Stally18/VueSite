@@ -1,0 +1,38 @@
+<template>
+  <div>
+  <img src="" alt="">
+    <div id="list">
+    <a href="">Корзина: {{cartcount}}</a><br>
+    <a href="">Закладки: {{bmarkcount}}</a><br>
+    <a href="">Резерв: {{rescount}}</a><br>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "user-block",
+  //required полезное поле у пропа
+  props: {
+    cartcount: {type: Number, default: 0},
+    bmarkcount: {type: Number, default: 0},
+    rescount: {type: Number, default: 0},
+  }
+}
+
+//TODO: почему text-align не работает для тега а но работает для div
+</script>
+
+<style scoped>
+a {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff;
+  margin-right: 30px;
+}
+#list {
+  display:inline-block;
+  text-align: left;
+}
+</style>
