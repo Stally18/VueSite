@@ -1,6 +1,6 @@
 <template>
   <div>
-  <img src="" alt="">
+  <img src="" alt="картинка">
     <div id="list">
     <a href="">Корзина: {{cartcount}}</a><br>
     <a href="">Закладки: {{bmarkcount}}</a><br>
@@ -12,7 +12,7 @@
 <script>
 export default {
   name: "user-block",
-  //required полезное поле у пропа
+  //required:true полезный параметр у пропа
   props: {
     cartcount: {type: Number, default: 0},
     bmarkcount: {type: Number, default: 0},
