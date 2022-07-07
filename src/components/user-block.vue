@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="test">
   <img src="" alt="картинка">
     <div id="list">
     <a href="">Корзина: {{cartcount}}</a><br>
@@ -21,6 +21,7 @@ export default {
 }
 
 //TODO: почему text-align не работает для тега а но работает для div
+//TODO: почему ничего не работает для выравнивания картинки
 </script>
 
 <style scoped>
@@ -34,5 +35,8 @@ a {
 #list {
   display:inline-block;
   text-align: left;
+}
+img {
+  vertical-align: middle
 }
 </style>

@@ -43,6 +43,10 @@
   <div id="bannerspanel">
     <promo-block></promo-block>
   </div>
+  <div id="collections">
+    <main-page-collection></main-page-collection>
+    <main-page-collection></main-page-collection>
+  </div>
 </template>
 
 <script>
@@ -50,10 +54,12 @@
 import HeaderItem from "@/components/header-item";
 import UserBlock from "@/components/user-block";
 import PromoBlock from "@/components/promo-block";
+import MainPageCollection from "@/components/main-page-collection";
 
 export default {
   name: 'App',
   components: {
+    MainPageCollection,
     PromoBlock,
     UserBlock,
     HeaderItem
@@ -68,8 +74,8 @@ export default {
 }
 
 //TODO: перенести все хардкод-строки в data? передавать массив строк, который там в цикле фор обработается
-//TODO: КАК ОТЦЕНТРИРОВАТЬ ВЕРТИКАЛЬНО БЛИН
 //TODO: разобраться с комбинированием классов, и сделать правильные цвета у шапки
+//TODO: почему когда я задал style тегу collections, то он уехал налево???
 </script>
 
 <style>
@@ -92,6 +98,7 @@ export default {
 }
 #headbar3 {
   display:inline-block;
+  vertical-align: middle
 }
 #headbar4 {
   font-family: Avenir, Helvetica, Arial Rounded MT Bold, sans-serif;
@@ -102,5 +109,10 @@ export default {
 }
 #bannerspanel {
   margin-top: 50px;
+}
+#collections {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
