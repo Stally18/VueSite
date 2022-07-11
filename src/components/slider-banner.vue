@@ -9,7 +9,7 @@ export default {
   name: "slider-banner",
   data() {
     return {
-      pic: ["src/assets/banner1.jpg", "src/assets/logo.png", "src/assets/banner2.png", "src/assets/banner3.png" ],
+      pic: [require("@/assets/banner1.jpg"), require("@/assets/logo.png"), require("@/assets/banner2.png"), require("@/assets/banner3.png") ],
       link: [],
       arrayindex: 0,
     }
@@ -32,5 +32,7 @@ export default {
 </script>
 
 <style scoped>
-
+a {
+  width: 500px
+}
 </style>

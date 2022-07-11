@@ -74,8 +74,9 @@ export default {
 }
 
 //TODO: перенести все хардкод-строки в data? передавать массив строк, который там в цикле фор обработается
-//TODO: разобраться с комбинированием классов, и сделать правильные цвета у шапки
 //TODO: почему когда я задал style тегу collections, то он уехал налево???
+//TODO: как раскидать по сторонам элементы headbar3? и вообще как правильно балансировать элементы
+//TODO: как сделать чтобы здесь задать цвет текста, которым будут выводиться headbar-ы?
 </script>
 
 <style>
@@ -90,6 +91,7 @@ export default {
   font-family: Avenir, Helvetica, Arial Rounded MT Bold, sans-serif;
   color : white;
   background: blue;
+  height: 25px;
 }
 #headbar2 {
   font-family: Avenir, Helvetica, Arial Rounded MT Bold, sans-serif;
