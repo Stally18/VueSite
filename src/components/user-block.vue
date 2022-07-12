@@ -1,6 +1,6 @@
 <template>
   <div id="test">
-  <img src="" alt="картинка">
+  <img :src="require('@/assets/logo.png')" alt="картинка" height="20">
     <div id="list">
     <a href="">Корзина: {{cartcount}}</a><br>
     <a href="">Закладки: {{bmarkcount}}</a><br>
@@ -20,21 +20,20 @@ export default {
   }
 }
 
-//TODO: почему text-align не работает для тега а но работает для div
-//TODO: почему ничего не работает для выравнивания картинки
+//TODO: это странно, но когда я отцентрировал текст - отцентрировалась и картинка
 </script>
 
 <style scoped>
 a {
   font-family: sans-serif;
   font-size: 14px;
-  text-align: left;
   color: #ffffff;
   margin-right: 30px;
 }
 #list {
   display:inline-block;
   text-align: left;
+  vertical-align: middle;
 }
 img {
   vertical-align: middle

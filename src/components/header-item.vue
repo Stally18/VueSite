@@ -1,5 +1,6 @@
 <template>
-  <a href=""><img :src="img">
+  <a href="">
+    <img :src="img">
     <div id="text">{{ text }}</div>
   </a>
 </template>
@@ -14,9 +15,6 @@ export default {
 }
 
 // :alt="text"
-//TODO: как сделать шрифт жирным?????????77
-//TODO: как сделать промежуток в центре?
-//TODO: сделать аргумент image, чтобы использовать для первой шапки?
 </script>
 
 <style scoped>

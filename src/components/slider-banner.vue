@@ -27,8 +27,6 @@ export default {
     }
   }
 }
-
-// TODO: почему не отображаются картинки, даже стандартное лого??
 </script>
 
 <style scoped>

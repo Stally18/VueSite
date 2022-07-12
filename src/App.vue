@@ -17,7 +17,7 @@
       <img alt="Vue logo" src="./assets/logo.png" height="100">
     </div>
     <div id="headbar3">
-      <input v-model="search" placeholder="Поиск"/>
+      <input v-model="search" placeholder="Поиск" height="50px" style="border-radius: 5px "/>
     </div>
     <div id="headbar3">
       <button><img src=""></button>
@@ -73,7 +73,6 @@ export default {
   }
 }
 
-//TODO: перенести все хардкод-строки в data? передавать массив строк, который там в цикле фор обработается
 //TODO: почему когда я задал style тегу collections, то он уехал налево???
 //TODO: как раскидать по сторонам элементы headbar3? и вообще как правильно балансировать элементы
 //TODO: как сделать чтобы здесь задать цвет текста, которым будут выводиться headbar-ы?
@@ -113,7 +112,7 @@ export default {
   margin-top: 50px;
 }
 #collections {
-  width: 1000px;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -44,7 +44,6 @@ export default {
 }
 
 //TODO: Почему если делаю тег list, то всё нормально комбится, a outerlist перестаёт комбиться
-//TODO: как сделать рамочки у блока
 //TODO: У БЛОКА list ИСЧЕЗЛО ПОДЧЁРКИВАНИЕ ОТ ТЕГА а ЧО БЛИН
 </script>
 
@@ -62,6 +61,7 @@ a {
 #minibanner {
   margin-left: 30px;
   margin-bottom: 30px;
+  border: darkgrey solid 1px;
 }
 #outerlist {
   width: 200px;
